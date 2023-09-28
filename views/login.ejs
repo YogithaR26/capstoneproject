@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+     text-align: center;
+     height: 25px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     width:150% ;
+     border-radius: 5px;
+    
+     
+    }
+    .container0{
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .container1{
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+        align-items: center;
+        text-align: center;
+       backdrop-filter: blur(5px);
+        padding: 50px;
+        border-radius: 10px;
+      color: black;
+      width: 15%;
+    border: 2px solid rgb(14, 76, 169);
+      
+    }
+    
+    body{
+      background-image:url("https://pub-static.fotor.com/assets/bg/835e8b4a-6aad-48b9-a105-cff386b3afc3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    .container1:hover{
+      box-shadow: 0px 0px 7px 0px blueviolet;
+    }
+    button{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 80px;
+        border-radius: 50px;
+        padding: 10px 15px;
+        border: none;
+    }
+    button:hover{
+       background-color: #030ee0;
+       color: rgb(249, 250, 251);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+       
+    }
+    h2{
+    color: black;
+ } 
+ .container1 h2{
+color: black;
+ } 
+
+        </style>
+</head>
+<body>
+   
+    <div class="container0">
+       
+        <div class="container1">
+            <h2><b>Login</b></h2>
+    <form method="post" action="/login">
+      
+    
+        <input type="text" name="Email" placeholder="Enter your Email" required><br><br>
+      
+         <input type="password" name="password" placeholder="Password" required ><br><br>
+      <h2><%=data2%></h2>
+      
+      <button type="submit">submit</button>
+    </form>
+</div></div>
+</body>
+</html>
